@@ -1,0 +1,86 @@
+/*Centralizando e adicionando uma cor de fundo na página*/
+body{
+    text-align: center;
+    background-color: #d3d3d3;
+}
+
+/*Adicionando underline no título e aplicando uma margem*/
+h1{
+    text-decoration: underline;
+    margin-top:5% ;
+}
+/*indicando o tamanho da fonte e posicionando o h3*/
+h3{
+    position: relative;
+    top: 30px;
+    font-size: 20px;
+}
+/*Posicionando o h2*/
+h2{
+    position: relative;
+    top: 10px;
+}
+
+/*Posicionando, indicando a altura e a largura do espaço onde estão as logos lincadas*/
+div{
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 40%;
+    height: 60%;
+    top: 70px;
+}
+
+/*Configurando as imagens/logos das redes sociais com posicionamento, borda e largura*/
+img{
+  position: relative;
+  width: 50px;
+  border-radius: 30px;
+  top: 20px;
+}
+
+/*Criando a animação*/
+.animacao{
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    width: 300px;
+    height: 30px;
+    /* Define um plano de fundo usando um gradiente linear da esquerda para a direita. */
+    background-image: linear-gradient(to right, #3498db 0%, #3498db 0%);
+    /* Define o tamanho do plano de fundo como 0% de largura e 100% de altura . */ 
+    background-size: 0% 100%;
+    /* Evita que o plano de fundo se repita. */
+    background-repeat: no-repeat;
+    /*cria uma animação com nome de preenchimento com duração de 5 segundos de forma linear e para frente. Mantem seu estado final*/
+    animation: preenchimento 5s linear forwards; 
+}
+  
+/*Posicionando e alterando o tamanho e fonte do texto dentro da animação*/
+p{
+    position: relative;
+    bottom: 20px;
+    padding: 3.8px;
+    font-size: 20px;
+    font-family: serif;
+    transition: all 0.3s ease; /*Suavizar o efeito hover*/
+}
+
+/*Adiciono uma borda no texto, negrito e uma cor diferente*/
+p:hover{
+    color: antiquewhite;
+    font-weight: bold;
+    /*Adicionando sombra ao texto*/
+    text-shadow: 1px 1px 0 #ff0000, -1px -1px 0 #ff0000, 1px -1px 0 #ff0000, -1px 1px 0 #ff0000;
+}
+
+/*Chamo a animação especificando o estado final dela*/
+@keyframes preenchimento {
+    to {
+      background-size: 100% 100%; /*largura e altura que serão preenchidas por volta de 5 sgundos*/
+    }
+}
+/*Quando passado o mouse, a cor de fundo da animação muda*/
+.animacao:hover{
+    background-image: linear-gradient(to right, #c1cad0 0%, #091218 0%);
+}

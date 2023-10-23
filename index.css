@@ -1,0 +1,383 @@
+/*RESETANDO*/
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+/*Modificando o header para o menu*/
+header{
+    display: block;
+    padding: 2%;
+    width: 98%;
+    height: 5%;
+    position: fixed;
+    top: 0%;
+    z-index: 1000;
+    background-color: blue;
+    
+}
+
+/*Configurando a área de navegação do menu*/
+nav{
+    margin: auto;
+    display: block;
+    position: relative;
+    width: 70em;
+    right:10px ;
+}
+
+/*Removendo os marcadores da lista não ordenada e mais algumas modificações*/
+ul{
+    display: block;
+    margin: auto;
+    list-style-type: none;
+    width: 50%;
+    font-size:large;
+    padding: 2%;
+}
+
+/*Posicionamento da lista para menu horizontal*/
+ul li{
+    float: left;
+    margin-right: 30px;
+    position: relative;
+    left: 15%;
+}
+
+/*Organizando os menus com os links */
+li a {
+    position: relative;
+    top: -15px;
+    display: block;
+    color: white;
+    text-align: center;   /*centralizando o texto*/
+    text-decoration: none; /*removendo o underline*/
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Centralizando Titulo do site*/
+.title{
+    text-align: center;
+}
+
+/*Configurando posicionamento e cor da div onde o titulo se encontra*/
+.div_title{
+    display:block;
+    float:right;
+    position: relative;
+    top: -70px;
+    right: 20px;
+    width: 11%;
+   color: white;
+}
+
+/*Alterando cor e fonte da primeira letra do titulo*/
+.div_title::first-letter{
+    color: rgb(149, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Colocando um cor fixa de fundo */
+body{
+    background-color: #aedce3;
+}
+
+/*configurando o Section*/
+.sec_mim{
+    display: block;
+    position: relative;
+    margin-top: 135px;
+    
+}
+/*modificando posição, tamanho, borda, cor e outras coisas na Div do texto "sobre mim"  */
+.sobre_mim{
+    position: relative;
+    top:35px;
+    float: right;
+    right: 18%;
+    background-color: white;
+    width: 25%;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+/*Centralizando e mudando a fonte do h1 */
+.titulo_2{
+    text-align: center;
+    margin-bottom: 2%;
+    font-family: sans-serif;
+}
+
+/*Posicionando, indicando fonte e tamanho do parágrafo*/
+p{
+    text-align: center;
+    font-family:  sans-serif;
+    font-size: large;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 9px;
+}
+
+/*Adicionando uma imagem minha*/
+.eu{
+    position: relative;
+    width: 27%;
+    height: 27%;
+    left: 20% ;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+/*Linhas Horizontais no título formação*/
+
+hr{
+    margin-top: 5%;
+    margin-left: 2px;
+    padding: 5px;
+    width:95%;
+    background-color:#00009C;
+}
+.hr_down{
+    margin-top: -0.1px;
+    margin-left: 2px;
+    padding: 5px;
+    width:95%;
+    background-color: #00009C;
+}
+
+/*Titulo da área onde mostro alguns cursos concluidos*/
+.T_formacao{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    width: 20%;
+    color: Black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    
+}
+
+/*Div Ensino medio*/
+.E_medio{
+    position: relative;
+    border-radius: 5px;
+    width: 30%;
+    background-color: white;
+    /* Quatro valores (top, right, bottom, left) */
+    padding: 8% 2% 8% 2%;
+    left: 5%;
+    top: 25px;
+}
+
+/*Posicionando o título*/
+.colegio{
+    text-align: center;
+    margin-top: -20%;
+}
+/*posicionando o texto e remoção das bordas*/
+.text_cole{
+    position: relative;
+    top: 20px;
+    border: none;
+}
+
+
+/*Organizando a Div desnvolvimento web*/
+.web{
+    position: relative;
+    border-radius: 5px;
+    width: 30%;
+    background-color: white;
+    /* Quatro valores (top, right, bottom, left) */
+    padding: 8% 2% 8% 2%;
+    left: 55%;
+    bottom:210px;
+}
+
+/*Posicionamento do Título na div desenvolvimento web*/
+.T_web{
+    text-align: center;
+    margin-top: -20%;
+}
+
+/*Posicionamento do Texto e remoção das bordas*/
+.text_web{
+    position: relative;
+    top: 20px;
+    border: none;
+}
+
+/*Div Manutenção de Micros e Redes*/
+.manutencao{
+    position: relative;
+    border-radius: 5px;
+    width: 30%;
+    background-color: white;
+    /* Quatro valores (top, right, bottom, left) */
+    padding: 8% 2% 8% 2%;
+    left: 5%;
+    bottom: 160px;
+}
+/*Posicionamento do Título na div Manutenção de Micros e Redes*/
+.T_manu{
+    text-align: center;
+    margin-top: -20%;
+}
+/*Posicionamento do texto e remoção das bordas*/
+.text_manuten{
+    position: relative;
+    top: 20px;
+    border: none;
+}
+
+/*Div da formação Informatica*/
+.informatica{
+    position: relative;
+    border-radius: 5px;
+    width: 30%;
+    background-color: white;
+    /* Quatro valores (top, right, bottom, left) */
+    padding: 8% 2% 8% 2%;
+    left: 55%;
+    bottom:400px;
+    
+}
+/*Título*/
+.T_infor{
+    text-align: center;
+    margin-top: -20%;
+}
+/*TExto*/
+.text_infor{
+    position: relative;
+    top: 20px;
+    border: none;
+}
+
+/*Div Cursando atualmente*/
+.atualmente{
+    width: 50%;
+    position: relative;
+    bottom:300px ;
+    left:  23%;
+    padding: 20px;
+}
+
+
+/*Estilizando o titulo do texto em que falo sobre o meu curso atual*/
+.T_atual{
+   margin-top: 2%;
+   margin-left: 20%;
+   text-align: center;
+   width: 60%;
+   font-family: Arial, Helvetica, sans-serif; /*especifico a fonte que quero usar*/
+   font-size:xx-large ; /*tamanho da fonte*/
+}
+/*TExto*/
+.text_ads{
+    padding: 5px;
+    position: relative;
+    top: 15px;
+    border: none;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: all 0.3s ease; /*Indico uma suavisação de 0.3 segundos em todos os modelos para o hover que vai ser adicionado*/
+}
+/*ação que acontecerá quando o mouse passar em cima*/
+.text_ads:hover{
+    background-color: white;
+    box-shadow: -2px -2.7px 3px black, 2px 2.7px 2px black;
+    border-radius: 5px;
+    padding: 10px; /*preenchimento*/
+}
+
+/*Posicionamento do Sumario com o curriculo*/
+details{
+    position: relative;
+    left: 6%;
+    bottom: 115px;
+    width: 80%;
+    
+  
+}
+
+summary{
+    font-size: 20px; /*tamanho da fonte*/
+    width: 20%; /*largura*/
+}
+
+
+object{
+    border-radius: 20px; /*Bordas arredondadas no object onde está o pdf*/
+    width: 55%;
+    display: block;
+    margin: auto; /*junto com o display:block; para centralizar*/
+}
+
+a{
+    position: relative;
+    top: 15px;
+    left: 40px;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(211, 23, 23);
+}
+summary a :hover{
+    color: blue;
+}
+
+
+/*Rodapé*/
+footer{
+    position: relative;
+    bottom: 10px;
+    height: 140px;
+    text-align: center;
+    font-style:italic ; /*adicionando itálico*/
+    font-family:Arial, Helvetica, sans-serif ; /*Tipo de Fonte para todos no footer*/
+}
+
+/*Posicionamento do texto no footer*/
+h4{
+    position: relative;
+    top: 80px;
+    padding: 20px; /*Preenchimento*/
+}
+
+/*Logo do git com Redirecionamento para o meu perfil do git hub*/
+.div_git{
+    position: relative;
+    top: 12px;
+    left: 85%;
+    width: 80px;
+    
+}
+  
+.logo_git{
+    width: 50px;
+    border-radius: 30px;
+}
+/*bordas arredondadas e cor de fundo diferentes quando passar o mouse*/
+
+  
+  /*Logo do whatsapp com Redirecionamento para o meu perfil */
+.div_zap{
+    position: relative;
+    bottom: 45.2px;
+    left: 92%;
+    width: 80px;
+    
+}
+/*bordas arredondadas e cor de fundo diferentes quando passar o mouse*/
+
+.logo_zap{
+    width: 50px;
+    border-radius: 30px;
+    background-color: whitesmoke;
+   
+}

@@ -1,0 +1,185 @@
+/*RESETANDIO*/
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/*Modificando o header/cabeçalho*/
+header{
+  display: block;
+  padding: 2%;
+  width: 98%;
+  height: 5%;
+  position: fixed;
+  z-index: 1000;
+  background-color: blue;
+}
+/*Configurando a área de navegação do menu*/
+nav{
+  margin: auto;
+  display: block;
+  position: relative;
+  width: 40em;
+  right:10px ;
+}
+/*Removendo os marcadores da lista não ordenada e mais algumas modificações*/
+ul{
+  display: block;
+  margin: auto;
+  list-style-type: none;
+  width: 35%;
+  font-size:large;
+  padding: 2%;
+
+}
+/*Posicionamento da lista para menu horizontal*/
+ul li{
+  float: left;
+ position: relative;
+ left: 25px;
+ 
+ 
+}
+/*Organizando os menus com os links */
+li a {
+  position: relative;
+  top: -10px;
+  left: 35px;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Centralizando o texto*/
+.title{
+  text-align: center;
+}
+
+/*Posicionando o título página no header*/
+.div_title{
+  position: relative;
+  display:block;
+  margin: auto;
+  float:right;
+  bottom: 25px;
+  right: 25px;
+  color: white;
+}
+/*Alterando a cor e a fonte da primeira letra*/
+.div_title::first-letter{
+  color: rgb(149, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Cor de fundo da página*/
+body{
+  background-color: #aedce3;
+}
+
+/*Alterando posição, tamanho, borda e preenchimento do form*/
+form{
+  display: block;
+  border: 2px solid black;
+  width: 16%;
+  height: 47%;
+  padding: 20px;
+  position: absolute;
+  top: 200px;
+  left: 41.5%;
+  border-radius: 20px;
+  
+}
+
+/*Modificando o rótulo do input, como fontes e posição*/
+label{
+ position: relative;
+ left:13px ;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-size: x-large;
+}
+/*Indicando a posição, bordas arredondadas e preenchimento para todos os input*/
+input{
+  position: relative;
+  left: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/*modificando a posição do "rótulo" */
+.mensagem{
+  position: relative;
+  top:13px;
+  left:0;
+}
+
+/*alterando a posição, borda e redirecionamento do textarea*/
+.in_menssagem{
+  position: relative;
+  top: 15px;
+  left: 0px;
+  border-radius: 7px; 
+  resize: none;
+}
+
+/*botão enviar*/
+.b_enviar{
+  position: relative;
+  top: 10%;
+  left: 55%;
+  padding: 5px;
+  border-radius: 4px;
+}
+/*botão de resete*/
+.b_resetar{
+  position: relative;
+  top: 10%;
+  left: 7px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/*Rodapé*/
+footer{
+  position: absolute;
+  top: 95%;
+  width: 100%;
+  text-align: center;
+  font-style:italic ;
+  font-family:Arial, Helvetica, sans-serif ;
+}
+/*Nome do criador da página*/
+h4{
+  position: relative;
+  top: 60px;
+}
+/*Redirecionamento para o meu perfil do git hub*/
+.div_git{
+  position: relative;
+  top: 12px;
+  left: 82%;
+  width: 90px;
+  
+}
+.logo_git{
+  width: 50px;
+  border-radius: 30px; /*Arredondamento da borda*/
+}
+
+
+/*Redirecionamento para o whatsapp*/
+.div_zap{
+  position: relative;
+  bottom: 45.2px;
+  left: 90%;
+  width: 90px;
+ 
+}
+
+.logo_zap{
+  width: 50px;
+  border-radius: 30px;
+  background-color: whitesmoke; /*Para preencher a parte sem cor de fundo da imagem*/
+}

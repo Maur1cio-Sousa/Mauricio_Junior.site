@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico"> <!--Adicionando Um favicon-->
+    <link rel="stylesheet" href="index.css">
+    <title>Meu Portfólio</title>
+</head>
+<body>
+    <!--Fazendo um header com menu de navegação-->
+    <header>
+        <nav>
+            <ul>
+                <li ><a href="" >Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+  
+        <div class="div_title">
+            <h1 class="title">Meu Portifólio</h1>
+        </div>
+    </header>
+    
+    <!--Seção: Falando um pouco sobre mim-->
+    <section class="sec_mim">
+        <img class="eu" src="Eu.jpeg" alt="Foto De mauricio junior">
+        <div class="sobre_mim">   
+            <h2 class="titulo_2">Um pouco sobre mim!</h2> 
+            <p>Olá! Me chamo Mauricio Junior, sou de Nova Canaã Bahia e tenho 19 anos.</p>
+            <p>Minha paixão por tudo que envolve Tecnologia da Informação teve início na minha infância, atravéz do meu primo que foi minha influência suprema.</p>
+            <p>Hoje em dia faço Análise e Desenvolvimento de Sistemas pela Uninter a fim de absorver conhecimento e poder continuar seguindo rumo ao meu objetivo final, uma carreira em <span class="cyber">Cybersecurity</span>
+            </p>
+        </div>   
+            
+    </section>
+
+   
+    <!--Seção: sobre minha formação-->
+  <section id="formacao">
+    <hr>
+    <h1 class="T_formacao">Alguns dos meus Certificados</h1>
+    <hr class="hr_down">
+    
+    <!--Divs com textos falando um pouco sobre minha formação-->
+    <div class="E_medio">
+        <h2 class="colegio">Ensino médio</h2>
+        <p class="text_cole">Ensino médio concluído em 2021 no Colégio Estadual Florestal De Nova Canaã</p>
+    </div>
+
+    <div class="web"> 
+        <h2 class="T_web">Desenvolvimento Web</h2>
+        <p class="text_web">Curso profissionalisante concluindo em 2021 pela instuição cenac, </p>
+    </div>
+
+    
+    <div class="manutencao">
+        <h2 class="T_manu">Manutenção de Micros e Redes</h2>
+        <p class="text_manuten">Curso de Micros concluido em 2020 pela Unicesumar na cidade de Iguai Bahia</p>
+    </div>
+
+    <div class="informatica">
+        <h2 class="T_infor">Pacote Office</h2>
+        <p class="text_infor">Concluido em 2016 em Nova Canaã Bahia na instuição casa alemã</p>
+    </div>
+
+    <div class="atualmente">
+        <h2 class="T_atual">Cursando Atualmente</h2>
+        <p class="text_ads">Faço curso superior em Análise e Desenvolvimento de sistemas, pela Uninter!!</p>
+    </div>
+
+    <!--Indico um object com um curriculo dentro de um sumário. Para ser exibido apenas quando clicado-->
+    <!--Se o browser não suportar, uma mensagem será exibida dando a possibilidade de baixar-->
+    <details class="curriculo">
+        <summary>Exibir Curriculo completo</summary>
+        <object data="Mauricio Junior currículo.pdf" type="application/pdf" width="500" height="600"> <p>Seu Navegador não suporta a visualização de PDFs? Você pode <a href="Mauricio Junior currículo.pdf"></a>Baixa-lo aqui</p></object>
+    </details>
+  </section>
+  <details>
+    <summary>Links de Alguns Projetos</summary>
+    <a href="Parallax/Parallax.html">Efeito Parallax</a>
+    <a href="Tabela/tabelas.html">Construindo Tabelas</a>
+    <a href="Pagina_amarela/index.html">Minha Página</a>
+  </details>
+  
+
+  <!-- Rodapé do site-->
+    <footer>
+        <h4>@Mauricio_Jr</h4>
+
+        <!--Logos de redes sociais lincadas com o meu perfil -->
+        <div class="div_git">
+            <a href="https://github.com/Maur1cio-Sousa"><img class="logo_git" src="github.png" alt="Link de um perfil com a logo do hithub"></a>
+        </div>
+
+        <div class="div_zap">
+            <a href="https://wa.me/+5571992148827"><img class="logo_zap" src="logo_zap.png" alt="Link de um perfil com a logo do whatsapp"></a>
+        </div>
+    </footer>
+
+
+</body>
+</html>
