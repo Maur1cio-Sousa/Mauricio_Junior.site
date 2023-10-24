@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+ <html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1,0">
+        <link rel="stylesheet" href="tab.css">
+        <title>Meu html de tags</title>
+
+        <style>
+            table{
+                /* se usada o valor "separate", a borda volta ao estado normal*/
+                border-collapse: separate; 
+                /* A tag "border:spacing" se encontra nula se se um dos atributos for "border-collapse:collapse" */
+                border-spacing: 5px 15px;  
+                border: blue solid 3px;
+                
+            }
+        </style>
+
+    </head>
+
+    <body>
+       <section> 
+        <main>
+         <h1>Tabelas</h1>
+         <p> Essas são as Tags para montar uma tabela:</p>
+         <ul>
+            <li>
+                <p><b>table</b></p>
+            </li>
+            <li>
+                <p><b>tr</b></p>
+            </li>
+            <li>
+                <p><b>td</b></p>
+            </li>
+
+         </ul>
+        <p>E ela ficará assim:</p>
+
+        <table border="3">
+            <tr>
+                <td>Nome</td>
+                <td>Endereço</td>
+                <td>telefone</td>
+            </tr>
+            <tr>
+                <td>Joseph Cristiam</td>
+                <td>ladeira Da Idependência, N° 33 Cenoc residência</td>
+                <td>(73) 98882-2149</td>
+            </tr>
+            <tr>
+                <td>Manny Santos</td>
+                <td>Praça paulo Costa, N° 14 Claudia cabeleireira</td>
+                <td>(73) 98882-2149</td>
+            </tr>
+            <tr>
+                <td>Joseph Cristiam</td>
+                <td>ladeira Da Idependência, N° 33 Cenoc residência</td>
+                <td>(73) 98882-2149</td>
+            </tr>
+            <tr>
+                <td>Manny Santos</td>
+                <td>Praça paulo Costa, N° 14 Claudia cabeleireira</td>
+                <td>(73) 98882-2149</td>
+            </tr>
+        </table>
+
+        </main>
+    </section>
+    
+    <br><section>
+        <main>
+            <h1>Tabela Complexa</h1>
+            <table border="2">
+                <tr>
+                    <td rowspan="2">Nome</td>
+                    <td rowspan="2">telefone</td>
+                    <td colspan="5">Endereço</td>
+                    
+                </tr>
+                <tr>
+                    <td>Rua</td>
+                    <td>Número</td>
+                    <td>Cidade</td>
+                    <td>Estado</td>
+                    <td>Cep</td>
+                    
+                </tr>
+
+                <tr>
+                    <td>Jasmin Ribeiro</td>
+                    <td>+55 (73) 988822149</td>
+                    <td>Avinida Juracy Magalhães</td>
+                    <td>14</td>
+                    <td>Nova Iguaçu</td>
+                    <td>bahia</td>
+                    <td>40040340</td>
+                </tr>
+                <tr>
+                    <td>Fernando Ribeiro</td>
+                    <td>+55 (73) 988383654</td>
+                    <td>Avinida Juracy Magalhães</td>
+                    <td>32</td>
+                    <td>Nova Camaçari</td>
+                    <td>bahia</td>
+                    <td>45270-000</td>
+                </tr>
+            </table>
+            <br>
+        <ul>
+            <li>
+                <p>Para Juntar duas colunas usa-se a tag: <b>"colspan"</b>, junto com a quantidade de colunas que quer mesclar</p>
+            </li>  
+            <li>  
+               <p>para juntar linhas, usa-se a tag: <b>"rowspan"</b>, junto com a quantidade de linhas que quer mesclar</p>
+            </li>
+            </ul>
+        </main>
+    </section>
+
+    <section>
+
+        <main>
+            <h2>Thead, tbody e tfoot</h2>
+            <ul>
+                <li>
+                    <p>A tag <b>thead</b>, serve para indicar o cabeçalho da tabela, podendo até facilitar na estilização do conteúdo</p>
+                </li>
+                <li>
+                     <p>A tag <b>Tbody</b>, serve para indicar os dados da tabela, podendo facilitar na estilização dos conteúdos</p>
+                </li>
+                <li>
+                     <p>A tag <b>Tfoot</b>, serve para indicar o rodapé da tabela, podendo também facilitar na estilização</p>
+                </li>
+
+                <li>
+                    <p>A tag <b>Th</b>, serve para estilizar automaticamente a tabela, como um cabeçalho. Deixando o elemento selecionado em negrito e centralizado</p>
+                </li>
+
+                <li>
+                    <p>A tag <b>"border:collapse"</b> dentro do css, da uma cara melhor para as linhas da tabela. Tirando a borda que fica no exterior da tabela</p>
+                </li>
+
+                <li>
+                <p>A tag <b>"border:dashed"</b> dentro do css, deixa as linhas da tabela pontilhadas  </p>
+                </li>
+
+                <li>
+                    <p>A tag <b>"width"</b> dentro do css, serve para definir a largura da tabela de acordo com o body</p>
+                </li>
+
+                <li>A tag <b>"border-spacing"</b> dentro do css, define o espaço entre os elementos da tabela, tanto na horizontal quanto na vertical</li>
+
+                <li><p>A tag <b>"caption"</b> serve para adicionar uma legenda na tabela. Ela fica logo após a tag <b>"Table"</b> e também pode ser estilizada com css</p></li>
+
+                <li><p>A tag <b>"caption-side"</b>, serve para posicionar a legenda. O valor "botton" serve para ficar em baixo e o valor top em cima da tabela.</p></li>
+
+                <li><p>A tag <b>"empty-colls"</b>, é inserida dentro da tag "table" e serve para esconder celular vazias quando usada com o valor <b>"hide"</b>. Essa tag não funciona com o atributo <b> "border collapse"</b></p></li>
+
+                <li><p>Tag que possibilita o uso do efeito Zebra: <b>"tbody tr:nth-child()"</b>(também poderia ser thead ou tfoot) , entre parenteses usa-se <b>"even"</b>(para linhas pares) ou <b>"odd"</b>(para linhas ímpares)</b></p></li>
+            </ul>
+        </main>
+    </section>
+
+    <button><a href="tags.html">Página das Tags iniciais</a></button>
+
+    <br>
+
+    <br><details>
+        <!-- É obrigatório ter a tag <sumary> na tag <details> -->
+        <summary>Criador</summary>
+        <p>Mauricio da Silva Sousa Junior</p>
+        
+    </details>
+    <details>
+        <summary>Estilizador</summary>
+        <p>Vinícios Santos</p>
+    </details>
+
+        <!-- Início rodapé -->
+    <footer>
+        <br>
+        <hr>
+        <img src="MArca do Style.jfif" alt="Logo do Noob Style" width="100" > 
+        <hr>
+    
+        <address>
+            Mauricio Junior
+            Número de contato:(73) 988822149
+            Nazaré Salvador Bahia, N° 33, Ladeira da Idependência
+            Cep: 40040-340
+        </address>
+       
+    </footer>
+    </body>
+
+</html>
