@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<!-- maxlength indica a quantidade maxima de caracteres escritos  -->
+<!--  -->
+<!-- A tag "n" injdica uma nova linha. Breack line ou "be" indica uma quebvra de linha -->
+<body>
+    <nav>
+        <header>100% PRETO</header>
+        <section class="nav-items">
+            <a href="#HOME">HOME</a>
+            <a href="#">SOBRE</a>
+            <a href="#form-button">FORMULÁRIO</a>
+        </section>
+    </nav>
+
+    <section id="HOME">
+        <div class="conteiner">
+            <div class="column-left">
+                <h1>Só projetos incríveis</h1>
+                <p>
+                    Entre em contato pelo formulário para saber mais sobre aplicações top!
+                </p>
+                <a id="CTA-button" href="#form-button">Comece Agora</a>
+            </div>
+
+            <picture class="column-right">
+                <img src="image.gif" alt="illustracion" id="home-image">
+
+            </picture>
+        </div>
+
+    </section>
+
+    <form action="http://google.com">
+        <section>
+            <h2>Formulário de Interesses</h2>
+            <p>Digite o Seu Nome:</p> 
+            <input type="text" name="Username" size=40 maxlength=45 placeholder="DIGITE O SEU NOME COMPLETO">
+            
+            
+            <p>Digite sua profissão:</p> 
+            <input type="text" name="UserJob" size=40 maxlength=45 placeholder="DIGITE A SUA PROFISSÃO">
+            
+          
+            <p>Nos conte um pouquinho sobre você:</p> 
+            <textarea name="userComment" cols="30" rows="4"></textarea>
+
+            
+            <p>Você faz exercícios regularmente?
+            <input type="radio" name="exercise" value=1> Sim
+            <input type="radio" name="exercise" value=2> Não
+            </p>
+          
+            <p>Por onde você lê sobre seus tópicos favoritos? 
+            <input type="checkbox" name="Books">Livros
+            <input type="checkbox" name="Web">Sites
+            <input type="checkbox" name="Apps">Aplicativos
+            <input type="checkbox" name="Magazines">Revistas
+            </p>
+          
+        <p>Qual gênero de filmes que você mais gosta?</p>
+            <select name="moviePref"> 
+                <option value="1">Nenhum</option>
+                <option value="2">Comédia</option>   
+                <option value="3">Românce</option>   
+                <option value="4">Drama</option>   
+                <option value="5">Terror</option>   
+                <option value="6">Ação</option>   
+            </select>
+        
+            
+           
+            <input id="form-button" type="submit" value="ENVIAR">
+            
+        </section>
+    </form>    
+</body>
+
+</html>

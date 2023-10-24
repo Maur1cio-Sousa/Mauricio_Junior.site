@@ -1,0 +1,157 @@
+*{
+    /* resetando o estilo da página / o css */
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p{
+    /* Posso colocar 4 valores, assim ele reconhece os 4 lados */
+    padding:5px;
+    
+}
+
+nav{
+    /* define a altura/ espaçamento */
+    height: 80px;
+    background-color: #fdcc04;
+    /* desbloqueando o espaçamento/ tirando do padrão block/ dando liberdade para organizar  */
+    display: flex;
+    /* Diz o espaçamento entre os conteudos */
+    justify-content: space-between;
+    align-items: center;
+    /* Ajuda na responsividade. "Vw" ajuda a manter de acordo com a largura da tela */
+    padding: 0rem 15vw;
+    
+}
+
+header{
+    font-size: 1.5rem;
+    /* define o peso da fonte. No caso, eu defini como negrito */
+    font-weight: bold ;
+    /* estilo da fonte. coloquei em itálico */
+    font-style: italic;
+}
+
+h2{
+    /* define a margem inferior do elemento */
+    margin-bottom:60px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* vou modificar o "a" que está dentro da tag nav*/
+nav a{
+    /* atribui o "none" pelo text-decoration e tirei o sublinhado do link */
+    text-decoration: none;
+    color: #222222;
+    padding: 0 1.5rem;
+}
+
+nav a:hover{
+    color: rgb(134, 67, 179);
+    /* Tirando o hover imediato do código. dando suavidade na navegação */
+    transition: 0.3s;
+
+}
+
+form{
+    display: flex;
+    /* pedindo para ele se alinhar ao centro */
+    align-self:center;
+    /* indico q ele vai tomar 95% da visualização da tela */
+    height: 95vh;
+    background-color: #222222;
+    color: white;
+    padding: 2vh 30vw;
+}
+
+
+input,
+select,
+textarea{
+    width: 35vw;
+    display: block;
+    padding:   0.1rem 0.75rem;
+    border-radius: 10px;
+}
+
+.conteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem 15vw;
+}
+
+.column-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #222222;
+    padding: 0rem 2rem;
+}
+
+.column-left h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#home-image{
+    width: 100%;
+    height: 100%;
+    background: #fdcc04;
+}
+
+#form-button {
+    margin-top: 30px;
+    padding: 1rem 1rem;
+    font-size:1rem;
+    border:none;
+    color:#222222;
+    background: #fdcc04;
+    /* da a possibilidade de mostrar uma mão quando estiver em cima do botão */
+    cursor: pointer;
+    border-radius: 50px;
+   
+}
+
+#form-button:hover{
+    background:#fff;
+    transition: 0.3s;
+}
+
+#CTA-button{
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #fdcc04;
+    background: #222222;
+    cursor: pointer;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#CTA-button:hover{
+    background-color: #fff;
+    color: #222222;
+    transition: 0.3s;
+}
+
+#HOME{
+    background-color: #fdcc04;
+}
