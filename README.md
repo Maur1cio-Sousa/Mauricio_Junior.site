@@ -1,2 +1,1 @@
-# Curiosidades em Desenvolvimento
- 
+# Olá!! Não sou desenvolvedor. Apenas curiosidades
